@@ -1,0 +1,29 @@
+body {
+    background: #303030;
+    color: #fff;
+}
+.gogol-font {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+}
+.zacherk {
+    text-decoration: line-through;
+}
+.verh-reg {
+    text-transform: uppercase;
+    text-align: center;
+}
+.mezh-slov {
+    color: #960089;
+    word-spacing: 30px;
+    text-decoration: wavy overline #960089;
+    text-shadow: 0.5px 0.5px 2px #fff;
+}
+.mezh-bukav {
+    letter-spacing: 5px;
+    text-decoration: underline double;
+    text-decoration-thickness: 2px;
+}
