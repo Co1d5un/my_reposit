@@ -6,7 +6,6 @@ body {
     font-weight: 400;
     color: #fff;
     line-height: 150%;
-    margin: -15px 0 0 0;
 }
 
 a:hover {
@@ -17,12 +16,11 @@ a:hover {
     max-width: 900px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 0 0 15px;
 }
 
 /* === HEADER STYLES === */
 .header {
-    margin: 30px 0 36px 0;
+    padding: 30px 0 36px 0;
 }
 
 .flex-header {
@@ -112,6 +110,8 @@ a:hover {
     padding: 18px 128.5px;
     border-radius: 100px;
     margin: 0 0 10px 0;
+    width: 320px;
+    height: 56px;
 }
 
 .hero-btn-one {
@@ -124,6 +124,7 @@ a:hover {
 
 .hero-btn-icon {
     align-items: center;
+    margin: 0 0 0 4px;
 }
 
 /* === CARD SECTION STYLES */
@@ -151,7 +152,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 0 2px 0;
 }
 
@@ -163,7 +164,7 @@ a:hover {
     height: 141px;
     box-shadow: 4px 4px 13px 0 rgba(5, 13, 41, 0.76);
     background: #197cb8;
-    margin: 0 14px 28px 0;
+    margin: 0 0 28px 0;
 }
 
 .card-title {
@@ -190,24 +191,31 @@ a:hover {
 
 .footer-flex {
     display: flex;
+    flex-direction: row;
     padding: 0 0 60px 0;
-    justify-content: space-between;
 }
 
 .col-1 {
     max-width: 267px;
     width: 100%;
+    margin-right: auto;
+}
+
+.foot-logo {
+    margin: 0 0 15px 0;
 }
 
 .col-2 {
-    padding: 0 117px 0 0;
+    max-width: 115px;
+    width: 100%;
+    margin: 0 117px 0 0;
 }
 
 .foot-title {
     font-weight: 600;
     font-size: 22px;
     text-transform: uppercase;
-    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
 }
 
 .foot-link {
@@ -215,5 +223,7 @@ a:hover {
 }
 
 .col-3 {
-    padding-right: 89px;
+    max-width: 115px;
+    width: 100%;
+    margin: 0 89px 0 0;
 }
