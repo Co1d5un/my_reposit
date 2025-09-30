@@ -289,4 +289,10 @@ li a {
     .sidebar__user {
         margin-left: 0;
     }
+
+}
+
+sup {
+    padding: 0 0 0 5px;
+    color: red;
 }
