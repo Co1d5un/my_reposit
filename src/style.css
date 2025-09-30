@@ -293,10 +293,10 @@ li a {
 }
 
 sup {
-    display: block;
     background: red;
     color: #fff;
     padding: 2px 5px;
     border-radius: 1px;
 }
+
 
