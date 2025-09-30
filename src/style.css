@@ -300,5 +300,14 @@ sup {
     margin: 0 0 0 3px;
 }
 
+sup:hover {
+    transition: all .3s;
+    background: #fff;
+    color: red;
+    padding: 2px 5px;
+    border-radius: 2.5px;
+    margin: 0 0 0 3px;
+}
+
 
 
