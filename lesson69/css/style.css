@@ -1,0 +1,25 @@
+body {
+    background: #353535;
+    color: #fff;
+    font-family: Helvetica, Tahoma, sans-serif;
+    font-size: 3em;
+    height: 50em;
+}
+.block {
+    position: fixed;
+    left: 50%;
+    right: 50px;
+    bottom: 100px;
+    height: 100px;
+    border-radius: 5px;
+    background: #fff;
+}
+.circle {
+    position: relative;
+    left: 10%;
+    bottom: 50%;
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 100%;
+}
