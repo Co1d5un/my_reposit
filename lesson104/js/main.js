@@ -7,7 +7,7 @@ const myProfile = {
     greet: function (name) {
         return `Hello, ${name}`
     }
-};
+}
 
 console.log(myProfile.greet(myProfile.name))
 
@@ -54,3 +54,4 @@ for (let i = 0; i < users.length; i++) {
 
 
 console.log(`Количество простых пользователей: ${regularUsersCount}`)
+
