@@ -5,11 +5,11 @@ const myProfile = {
     profession: 'CNC-Engineer',
 
     greet: function (name) {
-        return `Hello, ${name}`;
+        return `Hello, ${name}`
     }
 };
 
-console.log(myProfile.greet(myProfile.name));
+console.log(myProfile.greet(myProfile.name))
 
 const users = [
     {
@@ -42,14 +42,15 @@ const users = [
         age: 35,
         isAdmin: true
     }
-];
+]
 
-let regularUsersCount = 0;
+let regularUsersCount = 0
 
 for (let i = 0; i < users.length; i++) {
     if (!users[i].isAdmin) {
-        regularUsersCount++;
+        regularUsersCount++
     }
 }
 
-console.log(`Количество простых пользователей: ${regularUsersCount}`);
+
+console.log(`Количество простых пользователей: ${regularUsersCount}`)
