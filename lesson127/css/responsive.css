@@ -1,0 +1,222 @@
+/* === RESPONSIVE === */
+
+@media (max-width: 1200px) {
+    .hero__img {
+        margin-right: 0;
+        max-width: 377px;
+    }
+
+    .hero__img-control {
+        position: static;
+        padding-top: 3vh;
+        width: 90%;
+    }
+
+    .footer__inner {
+        justify-content: space-between;
+        grid-template: repeat(2, auto) / repeat(3, auto);
+    }
+
+    .footer__col:last-child {
+        text-align: center;
+        grid-column: 1 / -1;
+    }
+
+    .footer__col-copy {
+        float: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about__img {
+    grid-row: auto;
+}
+.about__content {
+    align-self: center;
+}
+.about__list {
+    grid-column: -3 / -1;
+}
+}
+
+@media (max-width: 900px) {
+    .nav {
+        background: var(--general-bg);
+        inset: 0;
+        position: fixed;
+        z-index: 1;
+        padding: 25vh 0 3vh;
+        font-size: 24px;
+        transform: translateY(-50%);
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--transition);
+    }
+
+    .nav__list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4vh 40px;
+    }
+
+    .body--openned-menu .nav {
+        transform: translateY(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .burger-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        transition: var(--transition);
+    }
+
+    .burger-menu span {
+        display: block;
+        background: var(--general-text);
+        width: 30px;
+        height: 3px;
+        border-radius: 1.5px;
+        position: relative;
+    }
+
+    .burger-menu span::after,
+    .burger-menu span::before {
+        content: '';
+        display: block;
+        background: var(--general-text);
+        width: 30px;
+        height: 3px;
+        border-radius: 1.5px;
+        position: absolute;
+    }
+
+    .burger-menu span::after {
+        top: -8px;
+    }
+
+    .burger-menu span::before {
+        bottom: -8px;
+    }
+
+    .body--openned-menu .burger-menu span {
+        background: transparent;
+    }
+
+    .body--openned-menu .burger-menu span::after {
+        top: 0;
+        transform: rotate(45deg);
+    }
+
+    .body--openned-menu .burger-menu span::before {
+        bottom: 0;
+        transform: rotate(-45deg);
+    }
+
+    .footer__inner {
+        gap: 0 0;
+        justify-content: center;
+        grid-template: none;
+        text-align: center;
+    }
+
+    .socials__list {
+        justify-content: center;
+    }
+
+    .footer__col:nth-child(2) {
+        padding-bottom: 40px;
+    }
+
+    .footer__col:nth-child(3) {
+        padding-bottom: 10px;
+    }
+
+    .footer__col:nth-child(4) {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero__inner {
+        flex-direction: column;
+    }
+
+    .hero__content {
+        width: 100%;
+        max-width: none;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .hero__img-control--mobile {
+        display: flex;
+        padding: 0 0 3vh;
+        width: 65vw;
+    }
+
+    .hero__img {
+        display: none;
+    }
+
+    .hero-btn {
+        max-width: 320px;
+    }
+
+    /* ---------------------------- */
+
+    .about__inner {
+        display: flex;
+        flex-direction: column;
+    }
+    .about__img {
+    max-width: 500px;
+    align-self: center;
+}
+.about__content {
+    align-items: center;
+    text-align: center;
+}
+.about__list {
+    grid: none;
+}
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding-bottom: 80px;
+    }
+
+    .hero__title {
+        font-size: 12vw;
+    }
+
+    /* -------------------- */
+.about {
+    padding: 60px 0 80px;
+}
+    
+.about__title {
+    font-size: 12vw;
+}
+.about__img-control {
+    border-radius: 0;
+    max-width: none;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 15px;
+}
+.about__item {
+    padding: 10px 15px;
+    gap: 15px;
+}
+}
