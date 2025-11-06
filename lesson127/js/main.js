@@ -107,7 +107,7 @@
 
     // slider in gallery
 
-    const swiper = new Swiper('.gallery__slider', {
+    new Swiper('.gallery__slider', {
         slidesPerView: 1,
         spaceBetween: 8,
 
@@ -133,6 +133,31 @@
             },
             1101: {
                 slidesPerView: 4,
+            }
+        }
+    });
+
+    // slider for opinions
+
+    new Swiper('.opinion__slider', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        centeredSlides: true,
+
+        navigation: {
+            nextEl: '.opinion__next',
+            prevEl: '.opinion__prev',
+        },
+        scrollbar: {
+            el: '.opinion__scrollbar',
+            draggable: true,
+        },
+        breakpoints: {
+            901: {
+                slidesPerView: 1.5,
+            },
+            1201: {
+                slidesPerView: 2.1,
             }
         }
     });

@@ -1,0 +1,158 @@
+/* === OPINION-SECTION STYLE PARAMETERS === */
+
+.opinion__slider {
+    overflow: visible;
+}
+
+.opinion__heading {
+    position: relative;
+}
+
+.opinion__title {
+    max-width: 624px;
+    padding-bottom: 20px;
+}
+
+.opinion__desc {
+    max-width: 624px;
+    padding-bottom: 40px;
+}
+
+.opinion__nav {
+    display: inline-flex;
+    justify-content: space-between;
+    max-width: 102px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 14.96%;
+}
+
+.opinion__prev {
+    transform: rotate(180deg);
+    justify-self: flex-start;
+}
+
+.opinion__prev,
+.opinion__next {
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--accent-color);
+    border-radius: 50%;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.opinion__prev:hover,
+.opinion__next:hover {
+    background: var(--accent-color);
+    transition: var(--transition);
+}
+
+.opinion__prev:hover path,
+.opinion__next:hover path {
+    fill: var(--general-bg);
+    transition: var(--transition);
+}
+
+.swiper-button-disabled,
+.swiper-button-disabled:hover {
+    background: transparent;
+    border: 1px solid #E1D9E1;
+    cursor: default;
+    transition: var(--transition);
+}
+
+.swiper-button-disabled path,
+.swiper-button-disabled:hover path {
+    fill: #E1D9E1;
+    transition: var(--transition);
+}
+
+.opinion__next {
+    justify-self: flex-end;
+}
+
+.opinion__wrapper {
+    align-items: center;
+}
+
+.opinion__slide {
+    display: flex;
+    gap: 30px;
+    background: var(--accent-bg);
+    border-radius: var(--b-radius);
+    padding: 30px 30px 40px;
+    max-width: 624px;
+    height: auto;
+    transition: var(--transition);
+}
+
+.opinion__slide.swiper-slide {
+    transform: scale(.9);
+    opacity: 0.5;
+}
+
+.swiper-slide-active.opinion__slide {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.opinion__author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 165px;
+    flex-shrink: 0;
+}
+
+.opinion__author-img {
+    overflow: hidden;
+}
+
+.opinion__author-img img {
+    border-radius: var(--b-radius);
+    width: 100%;
+}
+
+.opinion__author-name {
+    padding-top: 20px;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+
+.opinion__author-instagram {
+    display: flex;
+    gap: 5px;
+    padding-top: 5px;
+    color: #CEAAD0;
+    line-height: 1.5;
+}
+
+.opinion__message-title {
+    font-family: "Gabriola";
+    font-size: 32px;
+    line-height: .9;
+}
+
+.opinion__message-text {
+    padding-top: 10px;
+}
+
+.opinion__scrollbar.swiper-scrollbar {
+    margin-top: 40px;
+    position: static;
+    width: 100%;
+    height: 7px;
+    background: var(--accent-bg);
+    border-radius: var(--b-radius);
+}
+
+.opinion__scrollbar .swiper-scrollbar-drag {
+    background: var(--accent-color);
+}

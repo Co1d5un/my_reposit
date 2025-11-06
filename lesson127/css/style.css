@@ -2,12 +2,13 @@
 @import "reset.css";
 @import "global.css";
 @import "header.css";
+@import "swiper-bundle.min.css";
 @import "section-main.css";
 @import "section-about.css";
 @import "section-program.css";
 @import "section-gallery.css";
+@import "section-opinion.css";
 @import "footer.css";
 @import "modal.css";
 @import "accordion.css";
-@import "swiper-bundle.min.css";
 @import "responsive.css";

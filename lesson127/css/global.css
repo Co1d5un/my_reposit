@@ -68,8 +68,16 @@
     background: var(--hover-color);
 }
 
-.section {
-    padding: 140px 0;
+.section:first-child {
+    padding: 140px 0 70px;
+}
+
+.section:not(:first-child) {
+    padding: 70px 0;
+}
+
+.section:last-child {
+    padding: 70px 0 140px;
 }
 
 .field {
