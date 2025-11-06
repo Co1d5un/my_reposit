@@ -75,13 +75,15 @@
 
 @media (max-width: 450px) {
     .modal__window {
-    padding: 0 15px 45px;
-}
-.modal__title {
-    font-size: 35px;
-}
+        padding: 0 15px 45px;
+    }
+
+    .modal__title {
+        font-size: 35px;
+    }
+
     .modal__img {
-    max-width: 50%;
-    margin-top: -45px;
-}
+        max-width: 50%;
+        margin-top: -45px;
+    }
 }

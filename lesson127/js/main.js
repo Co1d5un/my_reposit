@@ -1,4 +1,6 @@
 (function () {
+
+    // burger-menu 
     document.addEventListener('click', burgerInit)
 
     function burgerInit(e) {
@@ -15,8 +17,10 @@
         }
     }
 
+    // modal pop-up
+
     const modal = document.querySelector('.modal')
-    const modalButton = document.querySelector('.about__img-btn')
+    const modalButton = document.querySelector('#modal-call')
 
     modalButton.addEventListener('click', openModal)
     modal.addEventListener('click', closeModal)
@@ -34,5 +38,71 @@
             document.body.classList.remove('body--modal-openned')
         }
     }
+
+    // tabs
+
+    const tabSelector = document.querySelector('.tab-controls')
+
+    tabSelector.addEventListener('click', toggleTab)
+
+    function toggleTab(e) {
+
+        const tabControl = e.target.closest('.tab-controls__link')
+
+        if (!tabControl) return
+
+        e.preventDefault()
+
+        if (tabControl.classList.contains('tab-controls__link--active')) return
+
+        const tabContentID = tabControl.getAttribute('href')
+        const tabContent = document.querySelector(tabContentID)
+        const activeControl = document.querySelector('.tab-content--show')
+        const activeContent = document.querySelector('.tab-controls__link--active')
+
+        if (activeControl) {
+            activeControl.classList.remove('tab-content--show')
+        }
+
+        if (activeContent) {
+            activeContent.classList.remove('tab-controls__link--active')
+        }
+
+        tabContent.classList.add('tab-content--show')
+        tabControl.classList.add('tab-controls__link--active')
+
+    }
+
+    // accordion
+
+    const accordionLists = document.querySelectorAll('.accordion-list');
+
+    accordionLists.forEach(el => {
+
+        el.addEventListener('click', (e) => {
+
+            const accordionList = e.currentTarget;
+            const accordionOpennedItem = accordionList.querySelector('.accordion-list__item--openned');
+            const accordionOpennedContent = accordionList.querySelector('.accordion-list__item--openned .accordion-list__control')
+            
+            const accordionControl = e.target.closest('.accordion-list__control');
+            if (!accordionControl) return
+            const accordionItem = accordionControl.parentElement;
+            const accordionContent = accordionControl.nextElementSibling;
+
+            if (accordionOpennedItem && accordionItem != accordionOpennedItem) {
+                accordionOpennedItem.classList.remove('accordion-list__item--openned');
+                accordionOpennedContent.style.maxHeight = null;
+            }
+
+            accordionItem.classList.toggle('accordion-list__item--openned');
+            
+            if (accordionItem.classList.contains('accordion-list__item--openned')) {
+                accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+            } else {
+                accordionContent.style.maxHeight = null;
+            }
+        })
+    })
 }
 )()
