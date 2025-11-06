@@ -1,0 +1,78 @@
+/* === FOOTER STYLES PARAMETERS=== */
+
+.footer {
+    background: #ab8260;
+    padding: 30px 0 60px 0;
+    color: var(--general-bg);
+}
+
+.footer__inner {
+    display: grid;
+    gap: 40px 30px;
+    justify-content: space-between;
+    grid-template-columns: .9fr .9fr 1.1fr auto;
+}
+
+.footer__col:not(:first-child) {
+    padding-top: 30px;
+}
+
+.socials__list {
+    display: flex;
+    padding-top: 20px;
+    gap: 15px;
+    line-height: 0;
+}
+
+.socials__link path {
+    transition: var(--transition);
+}
+
+.socials__link:hover path {
+    fill: var(--accent-color);
+}
+
+.footer__col-list {
+    padding-top: -5px;
+}
+
+.footer__col-item {
+    padding-bottom: 10px;
+}
+
+.footer__col-item:last-child {
+    padding-bottom: 0;
+}
+
+.footer__col-link {
+    display: block;
+    padding: 5px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.footer__contact-item {
+    padding-bottom: 10px;
+}
+
+.footer__contact-item:last-child {
+    padding-bottom: 0;
+}
+
+.footer__col-number {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.6;
+    display: block;
+    transition: var(--transition);
+}
+
+.footer__col-number:hover {
+    color: var(--accent-color);
+}
+
+.footer__col-copy {
+    padding-top: 47px;
+    float: right;
+    color: #dec5b1;
+}

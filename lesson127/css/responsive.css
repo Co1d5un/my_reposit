@@ -62,6 +62,18 @@
     .about__list {
         grid-column: -3 / -1;
     }
+    
+    .gallery__heading {
+        grid: none;
+    }
+
+    .gallery__heading-text {
+        max-width: 70%;
+    }
+
+    .gallery__heading-img {
+        display: none;
+    }
 }
 
 @media (max-width: 900px) {
@@ -281,6 +293,25 @@
         justify-self: center;
         grid-row: auto;
         grid-column: 1 / -1;
+    }
+
+    /* --------------------------- */
+
+    .gallery__heading {
+        grid: none;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    .gallery__heading-text {
+        max-width: none;
+        gap: 10px;
+    }
+    
+    .gallery__nav {
+        position: static;
+        margin: 0 auto;
+        padding: 10px 0;
     }
 }
 

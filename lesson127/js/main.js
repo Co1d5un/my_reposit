@@ -84,7 +84,7 @@
             const accordionList = e.currentTarget;
             const accordionOpennedItem = accordionList.querySelector('.accordion-list__item--openned');
             const accordionOpennedContent = accordionList.querySelector('.accordion-list__item--openned .accordion-list__control')
-            
+
             const accordionControl = e.target.closest('.accordion-list__control');
             if (!accordionControl) return
             const accordionItem = accordionControl.parentElement;
@@ -96,7 +96,7 @@
             }
 
             accordionItem.classList.toggle('accordion-list__item--openned');
-            
+
             if (accordionItem.classList.contains('accordion-list__item--openned')) {
                 accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
             } else {
@@ -104,5 +104,37 @@
             }
         })
     })
+
+    // slider in gallery
+
+    const swiper = new Swiper('.gallery__slider', {
+        slidesPerView: 1,
+        spaceBetween: 8,
+
+        pagination: {
+            el: '.gallery__pagination',
+            type: 'fraction',
+        },
+        navigation: {
+            nextEl: '.gallery__next',
+            prevEl: '.gallery__prev',
+        },
+        breakpoints: {
+            401: {
+                slidesPerView: 2,
+                spaceBetween: 12
+            },
+            601: {
+                slidesPerView: 3,
+                spaceBetween: 16
+            },
+            801: {
+                spaceBetween: 32
+            },
+            1101: {
+                slidesPerView: 4,
+            }
+        }
+    });
 }
 )()
