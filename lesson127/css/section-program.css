@@ -108,7 +108,7 @@
 .program__price-text {
     line-height: 1.6;
     text-transform: uppercase;
-    color: #ceaad0;
+    color: var(--accent-purple);
     margin-bottom: 5px;
 }
 

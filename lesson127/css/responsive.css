@@ -35,6 +35,13 @@
 
     /* ----------------------- */
 
+    .contact__inner::before {
+        top: 5%;
+        right: 0%;
+    }
+
+    /* ----------------------- */
+
     .footer__inner {
         justify-content: space-between;
         grid-template: repeat(2, auto) / repeat(3, auto);
@@ -73,6 +80,10 @@
 
     .gallery__heading-img {
         display: none;
+    }
+
+    .contact__img {
+        align-self: center;
     }
 }
 
@@ -156,6 +167,15 @@
         transform: rotate(-45deg);
     }
 
+    .contact__inner {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contact__img {
+        display: none;
+    }
+
     .footer__inner {
         gap: 0 0;
         justify-content: center;
@@ -181,6 +201,20 @@
 }
 
 @media (max-width: 800px) {
+    .section:first-child {
+        padding: 50px 0 25px;
+    }
+
+    .section:not(:first-child) {
+        padding: 25px 0;
+    }
+
+    .section:last-child {
+        padding: 25px 0 50px;
+    }
+
+    /* --------------------------------- */
+
     .hero__inner {
         flex-direction: column;
     }
@@ -247,14 +281,14 @@
     }
 
     .opinion__title {
-    max-width: none;
-    padding-bottom: 15px;
-}
+        max-width: none;
+        padding-bottom: 15px;
+    }
 
     .opinion__desc {
-    max-width: none;
-    padding-bottom: 20px;
-}
+        max-width: none;
+        padding-bottom: 20px;
+    }
 
     .opinion__nav {
         align-self: flex-end;
@@ -266,9 +300,22 @@
         width: 50%;
         margin: 0 auto;
     }
+
+    /* ----------------------------- */
+
+    .contact__inner::before,
+    .contact__inner::after {
+        content: none;
+    }
 }
 
 @media (max-width: 600px) {
+    .main-title {
+        font-size: 48px;
+    }
+
+    /* -------------------- */
+
     .hero {
         padding-bottom: 80px;
     }
@@ -340,7 +387,7 @@
     .gallery__nav {
         position: static;
         margin: 0 auto;
-        padding: 10px 0;
+        padding: 20px 0;
     }
 
     /* ------------------------- */
@@ -355,10 +402,20 @@
     }
 
     .opinion__slide {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* ----------------------- */
+
+    .contact__inner {
+        text-align: center;
+    }
+
+    .contact__checklabel {
+        align-self: center;
+    }
 }
 
 @media (max-width: 450px) {
@@ -372,6 +429,6 @@
     }
 
     .opinion__slide {
-    padding: 30px 10px;
-}
+        padding: 30px 10px;
+    }
 }

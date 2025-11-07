@@ -1,0 +1,139 @@
+/* === CONTACT-SECTION STYLES PARAMETERS=== */
+
+.contact {
+    background: url('../img/design/bg-footer.png') 50% 0% / cover no-repeat;
+}
+
+.contact__inner {
+    padding: 123px 0 137px;
+    display: flex;
+    justify-self: center;
+    gap: 84px;
+    position: relative;
+}
+
+.contact__inner::after {
+    content: url("../img/design/blueberries.png");
+    position: absolute;
+    left: -1%;
+    top: 16.018%;
+}
+
+.contact__inner::before {
+    content: url("../img/design/blueberries-and-leaves.png");
+    position: absolute;
+    top: 22.92%;
+    right: -9.648%;
+}
+
+.contact__img {
+    max-width: 574px;
+    align-self: flex-end;
+    position: relative;
+}
+
+.contact__img img {
+    width: 100%;
+    filter: drop-shadow(0 4px 30px 0 rgba(198, 176, 161, 0.3));
+}
+
+.contact__body {
+    max-width: 420px;
+}
+
+.contact__body a {
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+.contact__body a:hover {
+    color: var(--accent-color);
+}
+
+.contact__desc {
+    padding: 20px 0 40px;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__input {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 100px;
+    padding: 19px 28px;
+    display: block;
+    background: #00000000;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.contact__input:hover {
+    border-color: var(--accent-color);
+    transition: var(--transition);
+}
+
+.contact__input::placeholder {
+    color: var(--input-border);
+    transition: var(--transition);
+}
+
+.contact__input:hover::placeholder {
+    color: var(--accent-color);
+    transition: var(--transition);
+}
+
+.contact__input:focus {
+    border-color: var(--accent-color);
+}
+
+.contact__input:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.contact__checklabel {
+    max-width: 288px;
+    padding: 20px 0;
+    font-size: 13px;
+    display: flex;
+    gap: 5px;
+    align-items: flex-start;
+}
+
+.contact__checkbox {
+    appearance: none;
+    border: 1.50px solid var(--input-border);
+    border-radius: 4px;
+    width: 16px;
+    height: 16px;
+    transition: var(--transition);
+    flex-shrink: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.contact__checkbox::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("../img/icon/check-icon.svg") 50% 60% no-repeat;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.contact__checkbox:hover {
+    border: 1.50px solid var(--accent-color);
+}
+
+.contact__checkbox:checked {
+    border: 1.50px solid var(--accent-color);
+    background: var(--accent-color);
+}
+
+.contact__checkbox:checked::before {
+    opacity: 1;
+}

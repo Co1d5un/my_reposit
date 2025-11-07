@@ -130,7 +130,7 @@
     display: flex;
     gap: 5px;
     padding-top: 5px;
-    color: #CEAAD0;
+    color: var(--accent-purple);
     line-height: 1.5;
 }
 
