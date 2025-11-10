@@ -1,0 +1,35 @@
+.header__inner {
+    padding-top: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    max-width: 287px;
+    z-index: 1;
+    position: relative;
+}
+
+.header__logo::before {
+    content: url("../img/design/ellipse-top.svg");
+    position: absolute;
+    z-index: -1;
+    top: -5vh;
+    left: -150%;
+}
+
+.header__logo img {
+    width: 100%;
+}
+
+.header__phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__phone::before {
+    content: url("../img/design/icon/phone-icon.svg");
+    padding-top: 5px;
+}

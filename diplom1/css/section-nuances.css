@@ -1,0 +1,93 @@
+.nuances__list {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 49px 42px;
+    padding-top: 64px;
+}
+
+.nuances__list-item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+}
+
+.nuances__list-item:nth-child(n+3):nth-child(-n+4) {
+    flex-direction: row-reverse;
+}
+
+.nuances__list-item:nth-child(1) img {
+    object-position: -270px 0;
+}
+
+.nuances__list-item:nth-child(2) img {
+    width: 281px;
+    max-height: 199px;
+}
+
+.nuances__list-item:nth-child(4) img {
+    object-position: -40px 0;
+}
+
+.nuances__item-img {
+    max-width: 281px;
+    max-height: 199px;
+    position: relative;
+    z-index: 1;
+}
+
+.nuances__item-img::before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    width: 285px;
+    height: 203px;
+    background: var(--b-gradient);
+    z-index: -1;
+    animation: var(--animated-border);
+    border-radius: 20px;
+}
+
+.nuances__item-img::after {
+    content: url("../img/design/border-eclipse.svg");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 41px;
+    top: 90%;
+    z-index: 2;
+}
+
+.nuances__item-img img {
+    overflow: hidden;
+    border-radius: 18px;
+    max-width: 281px;
+    min-height: 199px;
+    left: 1px;
+    top: 1px;
+    object-fit: cover;
+}
+
+.nuances__list-item p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.44;
+}
+
+.nuances__list-item:nth-child(1) p {
+    max-width: 263px;
+}
+
+.nuances__list-item:nth-child(2) p {
+    max-width: 228px;
+}
+
+.nuances__list-item:nth-child(3) p {
+    max-width: 236px;
+}
+
+.nuances__list-item:nth-child(4) p {
+    max-width: 231px;
+}

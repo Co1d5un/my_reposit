@@ -1,0 +1,59 @@
+.ai-advantages__inner {
+    display: flex;
+    flex-direction: column;
+    padding-top: 69px;
+    gap: 69px;
+    position: relative;
+}
+
+.ai-advantages__inner::after {
+    content: "";
+    background: url("../img/design/ai.png") no-repeat;
+    position: absolute;
+    width: 955px;
+    height: 625px;
+    top: 0;
+    left: 495px;
+    box-shadow: inset 0 0 50px 0px #000;
+    mix-blend-mode: lighten;
+}
+
+.ai-advantages__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 692px;
+}
+
+.ai-advantages__item {
+    background: linear-gradient(90deg, rgba(31, 63, 77, 0.53) 52.08%, rgba(31, 75, 94, 0) 100%);
+    padding: 17px 0;
+    display: flex;
+}
+
+.ai-advantages__item::before {
+    content: url("../img/design/icon/check-mark-list-icon.svg");
+    margin: 0 20px 0 24px;
+}
+
+.ai-advantages__item p {
+    font-weight: 500;
+    max-width: 624px;
+    line-height: 1.4;
+}
+
+.ai-advantages__item:nth-child(2) p {
+    max-width: 559px;
+}
+
+.ai-advantages__item:nth-child(3) p {
+    max-width: 505px;
+}
+
+.ai-advantages__item:nth-child(4) p {
+    max-width: 446px;
+}
+
+.ai-advantages__btn {
+    max-width: 479px;
+}
