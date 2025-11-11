@@ -1,0 +1,236 @@
+.main {
+    position: relative;
+}
+
+.main::after {
+    content: url("../img/design/ellipse-bottom.svg");
+    position: absolute;
+    z-index: -1;
+    bottom: -66.5%;
+    display: flex;
+    justify-self: center;
+    clip-path: inset(0 0 60% 0);
+}
+
+.main-bg__inner {
+    position: relative;
+    width: 1200px;
+    z-index: 1;
+    box-shadow: inset 58px 4px 191px 47px #000;
+    mix-blend-mode: lighten;
+}
+
+.main__bg {
+    position: absolute;
+    overflow: hidden;
+}
+
+.main__bg--left {
+    left: -30%;
+    bottom: -85vh;
+    width: 300px;
+    height: 356px;
+}
+
+.main__bg--right {
+    top: 1vh;
+    right: -30%;
+}
+
+.main__bg--top {
+    width: 668px;
+    top: -16vh;
+    left: calc(45.7vw - 50%);
+}
+
+.main__bg--right img {
+    height: 726px;
+}
+
+.main__bg--top img {
+    width: 668px;
+}
+
+.modal-call {
+    position: absolute;
+    top: 0%;
+    left: -25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 0.36em;
+    text-transform: uppercase;
+    color: #00e0ff;
+}
+
+.modal-call p {
+    margin-top: 120px;
+    transform: rotate(-90deg);
+}
+
+.modal-call__btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13cdc2 100%);
+    animation: var(--pulse);
+}
+
+.wa-btn {
+    display: none;
+}
+
+.wa-insert {
+    display: none;
+}
+
+.main__content {
+    padding: 155px 0 178px;
+}
+
+.main__text {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--accent-3);
+    padding-bottom: 18px;
+}
+
+.main__title {
+    font-weight: 600;
+    font-size: 108px;
+    background: linear-gradient(180deg, #fff 31.75%, #1a3031 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main__desc {
+    max-width: 580px;
+    padding: 18px 0 77px;
+}
+
+.main__guarantee {
+    display: flex;
+    gap: 33px;
+    max-width: 576px;
+    padding-bottom: 101px;
+}
+
+.main__guarantee-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    width: 69px;
+    height: 69px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.11) 100%);
+    z-index: 1;
+}
+
+.main__guarantee-icon::before {
+    content: '';
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    border-radius: 10px;
+    background: var(--bg-layer);
+    z-index: -1;
+}
+
+.main__guarantee-icon::after {
+    content: '';
+    position: absolute;
+    width: 71px;
+    height: 71px;
+    background: var(--b-gradient);
+    border-radius: 12px;
+    z-index: -2;
+    animation: var(--animated-border);
+    background-size: 400% 400%;
+    transform: translate3d(0, 0, 0);
+}
+
+.main__guarantee-info {
+    font-size: 18px;
+    font-weight: 500;
+    align-self: flex-start;
+}
+
+.main__guarantee-title {
+    font-weight: 600;
+    line-height: 1.72;
+}
+
+.main__guarantee-desc {
+    color: var(--accent);
+    line-height: 1.28;
+}
+
+.switcher-down {
+    transform: rotate(270deg);
+    color: var(--accent-3);
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 0.36em;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    gap: 32px;
+    z-index: 2;
+}
+
+.switch {
+    display: inline-block;
+    position: relative;
+    border: 1px solid var(--accent);
+    border-radius: 60px;
+    width: 37px;
+    height: 20px;
+}
+
+.switch__input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.switch__slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch__slider::before {
+    content: "";
+    position: absolute;
+    cursor: pointer;
+    top: 4px;
+    right: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: var(--accent);
+    box-shadow: -4px 0 10px 0 rgba(74, 217, 236, 0.75);
+    transition: var(--trnstn);
+}
+
+.switch__input:checked+.switch__slider::before {
+    transform: translateX(-12px);
+    box-shadow: 4px 0 10px 0 rgba(74, 217, 236, 0.75);
+}
